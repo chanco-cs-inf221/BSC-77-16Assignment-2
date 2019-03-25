@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script type='text/javascript'>
+             var form = document.getElementById("form");
+
+             form.addEventListener("submit", function(event){
+                 event.preventDefault();
+                 var name = form.name.value;
+                 var projectDescription = form.project_Descripton.value;
+                 var date = new Date(form.complete.value);
+                 
+                 let arry = [name,projectDescription,date];
+
+                 localStorage.setItem("0",arr);
+
+                 var hie = document.getElementById("hie");
+                 var links = document.createElement("H");
+                 links.setAttribute("href","chunga.html");
+                 links.setAttribute("class","link");
+                 var project = document.createTextNode(name);
+                 links.appendChild(project);
+                 display.appendChild(links);
+                 form.reset();
+             })
+
+            </script>    
+        
+           
+            
+        <meta charset="UTF-8">
+        <title>web design</title>
+        <link rel="stylesheet" href="Assignment1.css">
+
+    </head>
+    <body>
+        
+
+        <p id="demo"></p>
+            <div id="container" >
+                    <fieldset>
+                            <legend id="manzy">view your project details here</legend>
+                            <div class="theOutPut"></div>
+                    </fieldset>
+            <legend>project information: <br>
+                <form action="file:///C:/Users/SIENJI%20MPHANDE/Documents/WEB/Assignment1.html" id="form">
+                    <p>PROJECT NAME : <br></p>
+                    <input id ="inpValue" type="text"  name="PROJECT NAME" placeholder="Project name" />
+                    <p>PROJECT DESCRIPTION : <br></p>
+                      <textarea id ="inpValue" name="Project description" placeholder="Please provide your Project description here....." cols="20" rows="20"></textarea><br>
+                      <label for="username">Completion Date: </label>
+                      <input id="inpValue" type="date" name="complete" /><br>
+                      <input id="submitForm" type="submit" name="Submit" />
+                </form>
+            </legend>
+                    
+                <h1>MARTIN FACT CHUNGA | chanco student</h1>
+                <img src="pictures/martin.jpg" width="100" height="100">
+                <p id="links"><a href="https://www.facebook.com/html/">facebook</a>        
+                <a href="https://www.Email-Address.com/html/">Email-Address</a>     
+                <a href="https://GitHub.com/html/">GitHub</a> </p>
+                
+                
+            </div>
+         <aside>
+                    <div  id="project">
+                            <h2>MY PROJECTS</h2>
+                    </div>
+                    
+                    
+                    <div class="one">
+                        <h2>UNIMA</h2>
+                        <P>The university of Malawi consist of four colleges namely
+                            Chancellor college,Polytechnic,Lilongwe university of Agriculture
+                            and Natural Resources, College of Medicine and Kamuzu College of Nursing.
+                        </P>
+                    </div>
+                    <div class="one">
+                        <h2>Chancellor College</h2>
+                        <p>The college consist of five faculties namely Faculty of science,Social
+                            Science,Education,Law and Humanities. Chancellor has a population
+                            of about 4500 students and it was the first public university to 
+                            be established in Malawi.</p>
+                    </div>
+                    <div class="one">
+                        <h2>Web Design</h2>
+                        <p>In all kinds of documents,structure is very important in helping readers
+                            to understand the the messages you are trying to convey and to navigate
+                            around the document. So,in order to learn how to write web pages,it is very important
+                            to under how to structure documents
+                        </p>
+                    </div>
+                    <div class="one" >
+                        <h2>Forms</h2>
+                        <p>Traditionally,the term "Forms"has refered to a printed document that contains spaces
+                            for you to fill in information. HTML borrows the concept of a form to refer
+                            to different elements that allow you to collect information from visitors
+                            to your site. 
+                        </p>
+                    </div>
+                    <div class="one" >
+                        <h2>Cascading Style Sheet(CSS)</h2>
+                        <P>CSS allows you to create rules that specify how the content of the element should
+                            appear. For Example,you can specify the background of the page is cream,all 
+                            paragraphs should appear in gray using the Arial typeface
+
+                        </P>
+                    </div>
+                    <div class="one">
+                        <h2>Building Blocks</h2>
+                        <p>CSS treats each HTML element as if it is in its own box. This box will either be a <b>Block-level.</b>
+                        Block-level boxes start on a new line and act as the main building blocks of any layout,while inline boxes
+                        flow between surrounding text.</p>
+                    </div>
+                    
+             
+         </aside>
+            <div id="third">
+                <h2>Work Experince</h2>
+            </div>
+    </body>
+</html>               
